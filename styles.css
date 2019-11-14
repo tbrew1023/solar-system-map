@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    font-family: segoe ui, helvetica neue, helvetica, arial, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: moz-none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Defaults */
+  body {
+    font-size: 16px;
+  }
+  
+  p, a, span {
+    font-size: 90%;
+    color: #666;
+    liine-height: 20px;
+  }
+  
+  .wrapper {
+    width: 540px;
+    margin: 0px auto;
+  }
+  
+  /* Header */
+  header {
+    padding: 120px 5000px 120px 0px;
+  }
+  
+  header h1 {
+    font-size: 220%;
+    color: #444;
+    text-align: center;
+  }
+  
+  header p {
+    text-align: center;
+  }
+  
+  /* Section */
+  .section {
+    padding: 40px 0px 40px 0px;
+  }
+  
+  .section.dark {
+    background: #dedede;
+  }
+  
+  .section h2 {
+    color: #444;
+    padding-bottom: 20px;
+  }
+  
+  /* Code */
+  .code {
+    padding: 20px;
+    background: #dedede;
+    color: #666;
+  }
+  
+  .section.dark .code {
+    background: #ccc;
+  }
+
+  .map-wrapper { 
+      cursor: move;
+      /*background-image: url('https://geology.com/world/united-states-map-with-state-names.gif');*/
+      width: 1500px;
+      height: 1500px;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
