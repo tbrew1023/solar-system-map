@@ -58,6 +58,18 @@ function defaultView() {
   $('.solar-system').css({
     'margin-left':'0'
   });
+  $('.backdrop').css({
+    'filter':'blur(1px)',
+    'transform':'scale(1)'
+  });
+  $('.orbitview-button').css({
+    'background':'white',
+    'color':'black'
+  });
+  $('.distanceview-button').css({
+    'background':'#ffffff00',
+    'color':'white'
+  });
 }
 
 function distanceView() {
@@ -106,10 +118,23 @@ function distanceView() {
     'width': '220px',
     'height':'220px'
   });
+  $('.backdrop').css({
+    'filter':'blur(2px)',
+    'transform':'scale(1.5)'
+  });
   /*$('.mercury').css({
     'width': '1px',
     'height':'1px'
   });*/
+
+  $('.orbitview-button').css({
+    'background':'#ffffff00',
+    'color':'white'
+  });
+  $('.distanceview-button').css({
+    'background':'white',
+    'color':'black'
+  });
 
   $('.solar-system').css({
     'margin-left':'-50vw'
