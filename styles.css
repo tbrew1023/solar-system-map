@@ -84,7 +84,7 @@ body {
   overflow: hidden;
   margin: 0;
   min-height: 100vh;
-  background-color: #181818;
+  background-color: black;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -245,7 +245,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid #ffffff44;
+	border: 1px solid #ffffff34;
   border-radius: 50%;
   transition: 4s ease, border 200ms;
 }
@@ -319,72 +319,61 @@ p {
 
 .planet {
 	position: absolute;
-	top: -3px;
-  width: 5px;
-  height: 5px;
+	top: -7px;
+  width: 15px;
+  height: 15px;
 	border-radius: 50%;
-  background-color: #3ff9dc;
   box-shadow: '0px 0px 20px 20px #3ff9dc37';
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mercury {
-  width: 1px;
-  height: 1px;
-  top: -1px;
+  background-image: url('res/svg-planets/mercury.svg');
 }
 
 .venus {
-  width: 2px;
-  height: 2px;
-  top: -1px;
+  background-image: url('res/svg-planets/venus.svg');
 }
 
 .earth {
-  width: 4px;
-  height: 4px;
-  top: -3px;
+  background-image: url('res/svg-planets/earth.svg');
 }
 
 .mars {
-  width: 2px;
-  height: 2px;
-  top: -1px;
+  background-image: url('res/svg-planets/mars.svg');
 }
 
 .jupiter {
-  width: 22px;
-  height: 22px;
-  top: -11px;
+  background-image: url('res/svg-planets/jupiter.svg');
 }
 
 .saturn {
-  width: 18px;
-  height: 18px;
-  top: -9px;
+  background-image: url('res/svg-planets/saturn.svg');
 }
 
 .uranus {
-  width: 8px;
-  height: 8px;
-  top: -4px;
+  background-image: url('res/svg-planets/uranus.svg');
 }
 
 .neptune {
-  width: 7px;
-  height: 7px;
-  top: -4px;
+  background-image: url('res/svg-planets/neptune.svg');
 }
 
 .sun {
 	width: 80px;
 	height: 80px;
 	border-radius: 100%;
-  background-color: #ffab91;
+  background-image: url('res/svg-planets/sun.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: 4s, box-shadow 200ms;
 }
 
 .sun:hover {
-  box-shadow: 0px 0px 10px 10px #ffab9137;
+  box-shadow: 0px 0px 10px 10px #ffff0037;
 }
 
 .leo {

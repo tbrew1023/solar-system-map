@@ -95,7 +95,9 @@ function defaultView() {
     'height':'80px'
   });
   $('.planet').css({
-    //'transform': 'scale(3)'
+    'width': '15px',
+    'height':'15px',
+    'top':'-7px'
   });
   $('.solar-system').css({
     'margin-left':'0'
@@ -115,6 +117,50 @@ function defaultView() {
 }
 
 function distanceView() {
+  $('.mercury').css({
+    'width': '1px',
+    'height':'1px',
+    'top':'-1px'
+  });
+  $('.venus').css({
+    'width':'2px',
+    'height':'2px',
+    'top':'-1px'
+  }); 
+  $('.earth').css({
+    'width':'4px',
+    'height':'4px',
+    'top':'-3px'
+  }); 
+  $('.mars').css({
+    'width':'2px',
+    'height':'2px',
+    'top':'-1px'
+  }); 
+  $('.jupiter').css({
+    'width':'22px',
+    'height':'22px',
+    'top':'-11px'
+  }); 
+  $('.saturn').css({
+    'width':'18px',
+    'height':'18px',
+    'top':'-9px'
+  }); 
+  $('.uranus').css({
+    'width':'8px',
+    'height':'8px',
+    'top':'-4px'
+  }); 
+  $('.neptune').css({
+    'width':'7px',
+    'height':'7px',
+    'top':'-4px'
+  });
+
+
+
+
   $('.mercury-orbit').css({
     'width': '247px',
     'height':'247px',
@@ -304,7 +350,6 @@ function distanceView() {
     $('.info h1').html(info[8].name);
     $('.info p').html(info[8].description);
     $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
   }, function() {
     $('.info h1').html(info[0].name);
     $('.info p').html(info[0].description);
