@@ -1,3 +1,42 @@
+var info = [
+  {
+    name: 'Mercury',
+    description: 'Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes only 87.97 days, the shortest of all the planets in the Solar System. It is named after the Roman deity Mercury, the messenger of the gods.'
+  },
+  {
+    name: 'Venus',
+    description: 'Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the second-brightest natural object in the night sky after the Moon, Venus can cast shadows and, rarely, is visible to the naked eye in broad daylight.'
+  },
+  {
+    name: 'Earth',
+    description: 'Earth is the third planet from the Sun and the only astronomical object known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago. Earth\'s gravity interacts with other objects in space, especially the Sun and the Moon, which is Earth\'s only natural satellite.'
+  },
+  {
+    name: 'Mars',
+    description: 'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury. In English, Mars carries a name of the Roman god of war and is often referred to as the \'Red Planet\'.'
+  },
+  {
+    name: 'Jupiter',
+    description: 'Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined. Jupiter has been known to astronomers since antiquity.'
+  },
+  {
+    name: 'Saturn',
+    description: 'Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth. It has only one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive.'
+  },
+  {
+    name: 'Uranus',
+    description: 'Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have bulk chemical compositions which differ from that of the larger gas giants Jupiter and Saturn.'
+  },
+  {
+    name: 'Neptune',
+    description: 'Neptune is the eighth and farthest known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. Neptune is 17 times the mass of Earth, slightly more massive than its near-twin Uranus.'
+  },
+  {
+    name: 'Sun',
+    description: 'The Sun, or Sol, is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth.'
+  }
+]
+
 $(window).ready(function() {
     console.log('i love you');
 });
@@ -53,7 +92,10 @@ function defaultView() {
   });
   $('.sun').css({
     'width': '80px',
-    'height':'80px',
+    'height':'80px'
+  });
+  $('.planet').css({
+    //'transform': 'scale(3)'
   });
   $('.solar-system').css({
     'margin-left':'0'
@@ -162,3 +204,109 @@ function distanceView() {
       curDown = false;
     });
   })*/
+
+  $('.neptune-orbit').hover(function() {
+    $('.info h1').html(info[7].name);
+    $('.info p').html(info[7].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html('');
+    $('.info p').html('Hover an orbit for info.');
+    $('.orbit').css('border','1px solid #ffffff34');
+  });
+
+  $('.uranus-orbit').hover(function() {
+    $('.info h1').html(info[6].name);
+    $('.info p').html(info[6].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html(info[7].name);
+    $('.info p').html(info[7].description);
+    $('.neptune-orbit').css('border','1px solid #ffffff');
+    $(this).css('border','1px solid #ffffff34');
+  });
+
+  $('.saturn-orbit').hover(function() {
+    $('.info h1').html(info[5].name);
+    $('.info p').html(info[5].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html(info[6].name);
+    $('.info p').html(info[6].description);
+    $('.uranus-orbit').css('border','1px solid #ffffff');
+    $(this).css('border','1px solid #ffffff34');
+  });
+
+  $('.jupiter-orbit').hover(function() {
+    $('.info h1').html(info[4].name);
+    $('.info p').html(info[4].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html(info[5].name);
+    $('.info p').html(info[5].description);
+    $('.saturn-orbit').css('border','1px solid #ffffff');
+    $(this).css('border','1px solid #ffffff34');
+  });
+
+  $('.mars-orbit').hover(function() {
+    $('.info h1').html(info[3].name);
+    $('.info p').html(info[3].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html(info[4].name);
+    $('.info p').html(info[4].description);
+    $('.jupiter-orbit').css('border','1px solid #ffffff');
+    $(this).css('border','1px solid #ffffff34');
+  });
+
+  $('.earth-orbit').hover(function() {
+    $('.info h1').html(info[2].name);
+    $('.info p').html(info[2].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html(info[3].name);
+    $('.info p').html(info[3].description);
+    $('.mars-orbit').css('border','1px solid #ffffff');
+    $(this).css('border','1px solid #ffffff34');
+  });
+
+  $('.venus-orbit').hover(function() {
+    $('.info h1').html(info[1].name);
+    $('.info p').html(info[1].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html(info[2].name);
+    $('.info p').html(info[2].description);
+    $('.earth-orbit').css('border','1px solid #ffffff');
+    $(this).css('border','1px solid #ffffff34');
+  });
+
+  $('.mercury-orbit').hover(function() {
+    $('.info h1').html(info[0].name);
+    $('.info p').html(info[0].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html(info[1].name);
+    $('.info p').html(info[1].description);
+    $('.venus-orbit').css('border','1px solid #ffffff');
+    $(this).css('border','1px solid #ffffff34');
+  });
+
+  $('.sun').hover(function() {
+    $('.info h1').html(info[8].name);
+    $('.info p').html(info[8].description);
+    $('.orbit').css('border','1px solid #ffffff34');
+    $(this).css('border','1px solid #ffffff');
+  }, function() {
+    $('.info h1').html(info[0].name);
+    $('.info p').html(info[0].description);
+    $('.mercury-orbit').css('border','1px solid #ffffff');
+  });
