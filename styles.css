@@ -245,9 +245,9 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid #ffffff34;
+	border: 3px solid #ffffff34;
   border-radius: 50%;
-  transition: 4s ease, border 200ms;
+  transition: 4s ease, border 200ms, border-radius 0s;
 }
 
 .orbit:hover {
@@ -387,28 +387,28 @@ p {
 .blue-orbit {
 	width: 165px;
 	height: 165px;
-  border: 1px solid #91daffa5;
+  border: 3px solid #91daffa5;
   -webkit-animation: spin3D 3s linear .2s infinite;
 }
 
 .green-orbit {
 	width: 120px;
 	height: 120px;
-  border: 1px solid #91ffbfa5;
+  border: 3px solid #91ffbfa5;
   -webkit-animation: spin3D 2s linear 0s infinite;
 }
 
 .red-orbit {
 	width: 90px;
 	height: 90px;
-  border: 1px solid #ffca91a5;
+  border: 3px solid #ffca91a5;
   -webkit-animation: spin3D 1s linear 0s infinite;
 }
 
 .white-orbit {
 	width: 60px;
 	height: 60px;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   -webkit-animation: spin3D 10s linear 0s infinite;
 }
 

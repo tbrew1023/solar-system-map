@@ -103,7 +103,7 @@ function defaultView() {
     'margin-left':'0'
   });
   $('.backdrop').css({
-    'filter':'blur(1px)',
+    'filter':'blur(3px)',
     'transform':'scale(1)'
   });
   $('.orbitview-button').css({
@@ -118,14 +118,14 @@ function defaultView() {
 
 function distanceView() {
   $('.mercury').css({
-    'width': '1px',
-    'height':'1px',
-    'top':'-1px'
+    'width': '3px',
+    'height':'3px',
+    'top':'-3px'
   });
   $('.venus').css({
     'width':'2px',
     'height':'2px',
-    'top':'-1px'
+    'top':'-3px'
   }); 
   $('.earth').css({
     'width':'4px',
@@ -135,12 +135,12 @@ function distanceView() {
   $('.mars').css({
     'width':'2px',
     'height':'2px',
-    'top':'-1px'
+    'top':'-3px'
   }); 
   $('.jupiter').css({
     'width':'22px',
     'height':'22px',
-    'top':'-11px'
+    'top':'-13px'
   }); 
   $('.saturn').css({
     'width':'18px',
@@ -167,8 +167,8 @@ function distanceView() {
     'animation':'none'
   });
   $('.venus-orbit').css({
-    'width':'271px',
-    'height':'271px',
+    'width':'273px',
+    'height':'273px',
     'animation':'none',
   }); 
   $('.earth-orbit').css({
@@ -177,8 +177,8 @@ function distanceView() {
     'animation':'none',
   }); 
   $('.mars-orbit').css({
-    'width':'331px',
-    'height':'331px',
+    'width':'333px',
+    'height':'333px',
     'animation':'none',
   }); 
   $('.jupiter-orbit').css({
@@ -211,8 +211,8 @@ function distanceView() {
     'transform':'scale(1.5)'
   });
   /*$('.mercury').css({
-    'width': '1px',
-    'height':'1px'
+    'width': '3px',
+    'height':'3px'
   });*/
 
   $('.orbitview-button').css({
@@ -254,104 +254,104 @@ function distanceView() {
   $('.neptune-orbit').hover(function() {
     $('.info h1').html(info[7].name);
     $('.info p').html(info[7].description);
-    $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
+    $('.orbit').css('border','3px solid #ffffff34');
+    $(this).css('border','3px solid #ffffff');
   }, function() {
     $('.info h1').html('');
     $('.info p').html('Hover an orbit for info.');
-    $('.orbit').css('border','1px solid #ffffff34');
+    $('.orbit').css('border','3px solid #ffffff34');
   });
 
   $('.uranus-orbit').hover(function() {
     $('.info h1').html(info[6].name);
     $('.info p').html(info[6].description);
-    $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
+    $('.orbit').css('border','3px solid #ffffff34');
+    $(this).css('border','3px solid #ffffff');
   }, function() {
     $('.info h1').html(info[7].name);
     $('.info p').html(info[7].description);
-    $('.neptune-orbit').css('border','1px solid #ffffff');
-    $(this).css('border','1px solid #ffffff34');
+    $('.neptune-orbit').css('border','3px solid #ffffff');
+    $(this).css('border','3px solid #ffffff34');
   });
 
   $('.saturn-orbit').hover(function() {
     $('.info h1').html(info[5].name);
     $('.info p').html(info[5].description);
-    $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
+    $('.orbit').css('border','3px solid #ffffff34');
+    $(this).css('border','3px solid #ffffff');
   }, function() {
     $('.info h1').html(info[6].name);
     $('.info p').html(info[6].description);
-    $('.uranus-orbit').css('border','1px solid #ffffff');
-    $(this).css('border','1px solid #ffffff34');
+    $('.uranus-orbit').css('border','3px solid #ffffff');
+    $(this).css('border','3px solid #ffffff34');
   });
 
   $('.jupiter-orbit').hover(function() {
     $('.info h1').html(info[4].name);
     $('.info p').html(info[4].description);
-    $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
+    $('.orbit').css('border','3px solid #ffffff34');
+    $(this).css('border','3px solid #ffffff');
   }, function() {
     $('.info h1').html(info[5].name);
     $('.info p').html(info[5].description);
-    $('.saturn-orbit').css('border','1px solid #ffffff');
-    $(this).css('border','1px solid #ffffff34');
+    $('.saturn-orbit').css('border','3px solid #ffffff');
+    $(this).css('border','3px solid #ffffff34');
   });
 
   $('.mars-orbit').hover(function() {
     $('.info h1').html(info[3].name);
     $('.info p').html(info[3].description);
-    $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
+    $('.orbit').css('border','3px solid #ffffff34');
+    $(this).css('border','3px solid #ffffff');
   }, function() {
     $('.info h1').html(info[4].name);
     $('.info p').html(info[4].description);
-    $('.jupiter-orbit').css('border','1px solid #ffffff');
-    $(this).css('border','1px solid #ffffff34');
+    $('.jupiter-orbit').css('border','3px solid #ffffff');
+    $(this).css('border','3px solid #ffffff34');
   });
 
   $('.earth-orbit').hover(function() {
     $('.info h1').html(info[2].name);
     $('.info p').html(info[2].description);
-    $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
+    $('.orbit').css('border','3px solid #ffffff34');
+    $(this).css('border','3px solid #ffffff');
   }, function() {
     $('.info h1').html(info[3].name);
     $('.info p').html(info[3].description);
-    $('.mars-orbit').css('border','1px solid #ffffff');
-    $(this).css('border','1px solid #ffffff34');
+    $('.mars-orbit').css('border','3px solid #ffffff');
+    $(this).css('border','3px solid #ffffff34');
   });
 
   $('.venus-orbit').hover(function() {
     $('.info h1').html(info[1].name);
     $('.info p').html(info[1].description);
-    $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
+    $('.orbit').css('border','3px solid #ffffff34');
+    $(this).css('border','3px solid #ffffff');
   }, function() {
     $('.info h1').html(info[2].name);
     $('.info p').html(info[2].description);
-    $('.earth-orbit').css('border','1px solid #ffffff');
-    $(this).css('border','1px solid #ffffff34');
+    $('.earth-orbit').css('border','3px solid #ffffff');
+    $(this).css('border','3px solid #ffffff34');
   });
 
   $('.mercury-orbit').hover(function() {
     $('.info h1').html(info[0].name);
     $('.info p').html(info[0].description);
-    $('.orbit').css('border','1px solid #ffffff34');
-    $(this).css('border','1px solid #ffffff');
+    $('.orbit').css('border','3px solid #ffffff34');
+    $(this).css('border','3px solid #ffffff');
   }, function() {
     $('.info h1').html(info[1].name);
     $('.info p').html(info[1].description);
-    $('.venus-orbit').css('border','1px solid #ffffff');
-    $(this).css('border','1px solid #ffffff34');
+    $('.venus-orbit').css('border','3px solid #ffffff');
+    $(this).css('border','3px solid #ffffff34');
   });
 
   $('.sun').hover(function() {
     $('.info h1').html(info[8].name);
     $('.info p').html(info[8].description);
-    $('.orbit').css('border','1px solid #ffffff34');
+    $('.orbit').css('border','3px solid #ffffff34');
   }, function() {
     $('.info h1').html(info[0].name);
     $('.info p').html(info[0].description);
-    $('.mercury-orbit').css('border','1px solid #ffffff');
+    $('.mercury-orbit').css('border','3px solid #ffffff');
   });
