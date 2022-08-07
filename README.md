@@ -1,1 +1,1 @@
-get read
+Live: [trentbrew.github.io/solar-system-map](https://trentbrew.github.io/solar-system-map)
