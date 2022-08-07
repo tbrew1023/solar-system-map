@@ -105,8 +105,8 @@ function defaultView() {
 
   });
   $('.backdrop').css({
-    'filter': 'brightness(0.4) contrast(1)',
-    'transform':'scale(1.2) translateX(0%)',
+    // 'filter': 'brightness(0.4) contrast(1)',
+    // 'transform':'scale(1.2) translateX(0%)',
   });
   $('.orbitview-button').css({
     'background':'white',
@@ -205,8 +205,8 @@ function distanceView() {
     'height':'220px'
   });
   $('.backdrop').css({
-    'transform':'scale(1) translateX(0%)', 
-    'filter': 'brightness(0.8) contrast(1)',
+    // 'transform':'scale(1) translateX(0%)', 
+    // 'filter': 'brightness(0.8) contrast(1)',
   });
   $('.orbitview-button').css({
     'background':'#ffffff00',

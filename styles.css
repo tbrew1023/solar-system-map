@@ -455,13 +455,13 @@ p {
   color: white;
   border-radius: 36px;
   text-align: center;
-  font-family: 'Righteous', cursive;
+  /* font-family: 'Righteous', cursive; */
   font-size: 13px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 48px;
   transition: 250ms;
   margin-right: 20px;
-  backdrop-filter: blur(12px);
+  /* backdrop-filter: blur(12px); */
   /* width: 150px; */
 }
 
